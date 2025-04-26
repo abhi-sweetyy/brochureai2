@@ -447,6 +447,9 @@ const Dashboard = () => {
     } else {
       console.log(`[goToNextStep] Already on last step (${currentStep}).`);
     }
+
+    // Scroll to the top of the page after advancing
+    window.scrollTo(0, 0);
   };
 
   const goToPreviousStep = () => {
