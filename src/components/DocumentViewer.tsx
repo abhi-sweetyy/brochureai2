@@ -60,7 +60,7 @@ export default function DocumentViewer({
   }, [supabase]); // Removed session dependency as it causes potential loops
 
   // Updated Google Slides presentation ID for the template
-  const templateId = "1pw-FjBIu2webGkwTG7WPvFHSxpF5jsd1O_qrxJ_cFjY";
+  const templateId = "1N-9VAQ0ecfhxiPP2qUHJFK7FMSWaR5-uJOJo6mLh2mo";
 
   // Get current language for Google Slides
   const getLanguageParam = () => {
