@@ -156,23 +156,6 @@ const AmenitiesStep: React.FC<AmenitiesStepProps> = ({
           <label className={commonLabelClass}>{t('amenities.energyCertificateUntil')}</label>
           <input type="text" name="energy_certificate_until" value={placeholders.energy_certificate_until || ''} onChange={handleInputChange} className={commonInputClass} placeholder={t('amenities.enterEnergyCertificateUntil')} />
         </div>
-        <div>
-          <label className={commonLabelClass}>{t('amenities.energyDemand')}</label>
-          <input type="text" name="energy_demand" value={placeholders.energy_demand || ''} onChange={handleInputChange} className={commonInputClass} placeholder={t('amenities.enterEnergyDemand')} />
-        </div>
-        <div>
-          <label className={commonLabelClass}>{t('amenities.energyEfficiency')}</label>
-          <select
-            name="energy_efficiency"
-            value={placeholders.energy_efficiency || ''}
-            onChange={handleInputChange}
-            className={commonInputClass}
-          >
-            <option value="">{t('amenities.enterEnergyEfficiency')}</option>
-            <option value="F">{t('amenities.energyEfficiency.f')}</option>
-            <option value="G">{t('amenities.energyEfficiency.g')}</option>
-          </select>
-        </div>
         <div className="md:col-span-2">
           <label className={commonLabelClass}>{t('amenities.mainEnergySource')}</label>
           <input type="text" name="main_energy_source" value={placeholders.main_energy_source || ''} onChange={handleInputChange} className={commonInputClass} placeholder={t('amenities.enterMainEnergySource')} />
